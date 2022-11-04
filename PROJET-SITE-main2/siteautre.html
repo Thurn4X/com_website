@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sitedeux.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+        <title>Human Design</title>
+        <script defer src="javascripthehe.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+    <body>
+        <div class="background"></div>
+        <header id="header"></header>
+
+        <section class="subheader">
+            <div class="text-box">
+                <h1>Enflammez vos entrainement</h1>
+                <p>Cherchez ce que vous souhaitez, Frappez ce que vous souhaitez</p>
+                <a class="titlebtn" onClick="document.getElementById('produits').scrollIntoView();">Decouvrez nos produits</a>
+            </div>
+        </section>
+
+
+        <!-- DESCRIPTION EN DESSOUS DE L'ENTETE -->
+        <section class="description">
+
+            <h1>Nos Produits</h1>
+            <div class="categoriemenu">
+                <div class="naturel">
+                    <h3>Des Produits Naturels</h3>
+                    <p>Nos marchandises sont issues de l'agriculture biologique, et sont 100% naturelles</p>
+                </div>
+                <div class="naturel">
+                    <h3>Une Plateforme Pratique</h3>
+                    <p>Avec Human Design acheter du matériel n'a jamais été aussi simple.</p>
+                </div>
+                <div class="naturel">
+                    <h3>Une Large Gamme</h3>
+                    <p>Nous souhaitons rester une plateforme multiculturelle, nos produits viennent de divers horizons.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUITS -->
+        <section class="services" id="produits">
+            <h1>Nos Produits</h1>
+            <p>Human Design vous propose trois catégories</p>
+
+            <div class="categoriemenu">
+                <div class="acheter">
+                    <img src="gants.jpeg">
+                    <a href="personnalisation.html?id=1">
+                        <div class="layer">
+                            <h3>GANTS</h3>
+                            <p> Pour plus de force en toute circonstance</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="acheter">
+                    <img src="suuuu.jpg">
+                    <a href="personnalisation.html?id=2">
+                        <div class="layer">
+                            <h3>SAC DE FRAPPE</h3>
+                            <p> Pour se défouler en toute mobilité</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="acheter">
+                    <img src="pb.jpg">
+                    <a href="personnalisation.html?id=3">
+                        <div class="layer">
+                            <h3>Punching-ball</h3>
+                            <p>BOOM BOOM TAM TAM</p>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+    
+
+        </section>
+
+        <!-- PIED DE PAGE -->
+        <footer id="footer"></footer>
+
+
+        <!-- CECI EST LE JAVASCRIPT POUR LE MENU DE LA PAGE REDUITE -->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+
+            function showmenu(){
+                navlinks.style.right = "0";
+            }
+
+            function hidemenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
