@@ -117,6 +117,29 @@ nav .fa{
     display: none;
 }
 
+
+.topbtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    border-color: white;
+    background-color: #121524;
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 20px;
+    font-weight: 400px;
+    transition: 0.5s;
+  }
+  
+.topbtn:hover {
+    box-shadow: 0 0 20px 0 rgba(255,255,255,0.7);
+  }
+
+
 @media(max-width: 700px){
     nav img{
         width: 200px;

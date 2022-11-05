@@ -13,11 +13,22 @@ var gantes= new Produits("gant", "petit", "marron", "30 €",30, "gants.jpeg");
 var sacfrappe= new Produits("sac", "petit" ,"marron", "50 €",50, "suuuu.jpg");
 var punching= new Produits("ball", "petit", "rouge", "40 €",40, "pb.jpg");
 products = [ gantes, sacfrappe, punching]
-var sexe, ethnie;
+var mybutton = document.getElementById("topbtn");
 
 
 
-
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function allerenhaut() {
+    document.documentElement.scrollTop = 0;
+  } 
 
 
 
